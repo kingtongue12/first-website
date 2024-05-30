@@ -1,0 +1,354 @@
+.container {
+	width: 1400px;
+	max-height: 1400px;
+	display: grid;
+	grid-template-columns: [cs] 100% [ce];
+	grid-template-rows: [r1] 150px [r2] 50px [r3] 40% [r4] 40% [r5] 20% [r6];
+	justify-content: center;
+	margin: 0 auto;
+
+}
+
+/* Title Division */
+
+.Theader {
+	grid-column: cs / ce;
+	grid-row: r1 / r2;
+	border-bottom: 1px solid white;
+	justify-content: center;
+	background-image: url("images/bgcolornew.png");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.logo {
+	width: 125px;
+	height: 125px;
+	border-radius: 50%;
+	transition: all ease-in-out .2s;
+	float: left;
+	padding-top: 12px;
+	padding-left: 12px;
+}
+
+.htitle {
+	font-family: 'PT Sans Narrow', sans-serif;
+	padding-top: 20px;
+	color: white;
+}
+
+.tagline {
+	font-family: 'PT Sans Narrow', sans-serif;
+	margin-top: -25px;
+}
+
+
+/* Sections Division */
+
+.sections {
+	display: grid;
+	grid-template-columns: 100px 150px 150px 100px;
+	font-family: 'Raleway', monospace;
+	color: white;
+	border-bottom: 1px solid white;
+	background-image: url("images/bgcolornew.png");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bsections {
+	height: 50px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all ease-in-out .25s;
+}
+
+#home {
+	width: 100px;
+}
+
+#join {
+	width: 100px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+.bsections:hover {
+	background-color: white;
+	color: black;
+}
+
+/* Alternative way for Sections
+.topnavi {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ff12a8;
+}
+
+li {
+	float: left;
+}
+
+li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	color: black;
+	background-color: #ffffff;
+}
+
+/* Suite Division */
+/*
+* {box-sizing: border-box}
+.mySlides {
+	display: none;
+}
+img {vertical-align: middle;
+}
+
+.suitec {
+	max-width: 1400px;
+	position: relative;
+	margin: auto;
+	border-bottom: 1px solid white;
+	background-image: url("images/bgcolor.png");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	margin-top: -22px;
+	padding: 16px;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+	background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+	color: #f2f2f2;
+	font-size: 15px;
+	padding: 8px 12px;
+	position: absolute;
+	bottom: 8px;
+	width: 100%;
+	text-align: center;
+}
+
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+.dot {
+	cursor: pointer;
+	height: 15px;
+	width: 15px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+	background-color: #717171;
+}
+
+.slide {
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade {
+	from {opacity: .4}
+	to {opacity: 1}
+}*/
+
+/* Suites Division */
+
+.suitec {
+	max-width: 1400px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 50px 187px;
+	grid-template-areas: 
+		"head1 head1 head1 head1 head1"
+		"pic1 pic2 pic3 pic4 pic5";
+}
+
+.hsuite {
+	text-align: center;
+	grid-area: head1;
+	display: flex;
+	font-family: 'Raleway', monospace;
+	color: white;
+	border-bottom: 1px solid white;
+	background-image: url("images/bgcolornew.png");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	justify-content: center;
+	align-items: center;
+}
+
+.rurals {
+	max-width: 280px;
+	width: 280px;
+	height: 187px;
+	background-size: cover;
+	grid-area: pic1;
+}
+
+.rurdef {
+	position: relative;
+	background: black;
+	color: white;
+	height: 40px;
+	width: 100%;
+	bottom: 80px;
+	text-align: center;
+}
+
+.rurp {
+	padding: 10px;
+}
+
+.rurals:hover {
+	background-color: white;
+}
+
+.marcsuite {
+	max-width: 280px;
+	width: 280px;
+	height: 187px;
+	background-image: url("images/Suites/marcsuite.jpg");
+	background-size: cover;
+	grid-area: pic2;
+}
+
+.corsuite {
+	max-width: 280px;
+	width: 280px;
+	height: 187px;
+	background-image: url("images/Suites/corsuite.jpg");
+	background-size: cover;
+	grid-area: pic3;
+}
+
+.minsuite {
+	max-width: 280px;
+	width: 280px;
+	height: 187px;
+	background-image: url("images/Suites/minsuite.jpg");
+	background-size: cover;
+	grid-area: pic4;
+}
+
+.lumsuite {
+	max-width: 280px;
+	width: 280px;
+	height: 187px;
+	background-image: url("images/Suites/lumsuite.jpg");
+	background-size: cover;
+	grid-area: pic5;
+}
+
+/* Information Division*/
+
+.webpic {
+	background-image: url("images/bginfo3.png");
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border-bottom: 2px solid white;
+}
+
+.webb {
+	font-family: 'Raleway', monospace;
+	padding-right: 25%;
+	padding-left: 10px;
+	opacity: ;
+	color: #dddddd;
+}
+
+
+/* Contacts Division */
+
+.footer {
+	max-width: 1400px;
+	margin: 0 auto;
+	padding-top: 50px;
+	padding-left: 20px;
+	padding-bottom: 10px;
+	display: grid;
+	grid-template-columns: 40% 60%;
+}
+.footer {
+	font-family: 'Raleway', monospace;
+	position: relative;
+	bottom: 0;
+	width: 860px;
+	height: 200px;
+	background-color: white;
+	color: black;
+}
+
+.but1 {
+	font-family: 'Raleway', monospace;
+}
+
+.input {
+	padding-top: 20px;
+	padding-left: 30px;
+}
+
+.footmessage {
+	padding-top: 5px;
+	vertical-align: top;
+}
+
+.contactus {
+	border-right-style: solid;
+	border-right-color: black;
+	border-right-width: 2px;
+}
+
+.input {
+	border-left-style: solid;
+	border-left-color: black;
+	border-left-width: 2px;
+}
